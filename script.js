@@ -96,3 +96,4 @@ filterForm.addEventListener('submit', function(event) {
 
 // Initial rendering of appointments
 renderAppointments();
+rahul
