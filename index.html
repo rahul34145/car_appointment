@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Service Booking App</h1>
+        <form id="appointment-form">
+            <label for="customer-name">Customer Name:</label>
+            <input type="text" id="customer-name" required>
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" required>
+            <label for="appointment-description">Appointment Description:</label>
+            <textarea id="appointment-description" rows="4"></textarea>
+            <button type="submit">Add Appointment</button>
+        </form>
+        
+        <div id="appointment-list">
+            <!-- Appointments will be dynamically added here -->
+        </div>
+        <form id="filter-form">
+            <label for="filter-date">Filter by Date:</label>
+            <input type="date" id="filter-date">
+            <button type="submit">Filter</button>
+        </form>
+        <p id="filter-result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
